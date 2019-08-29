@@ -45,7 +45,8 @@ During program execution it uses temporory files to store EC2 instances , volume
 
 <details>
   <summary>Click to see full output</summary>
-➜  ec2_ebs_part_2 git:(master) ✗ ./runDEMO.py
+  ``` Python 
+  ➜  ec2_ebs_part_2 git:(master) ✗ ./runDEMO.py
 2019-08-29 14:48:11 =========================== Creating EC2 instance ============================
 2019-08-29 14:48:12 EC2 instance has been created with ID : i-05e3a81e15d4dd5b3
   Now ... Waiting for instance to enter running state
@@ -386,6 +387,7 @@ drwx------ 2 root     root     16384 Aug 29 21:51 lost+found
 2019-08-29 14:57:14 =======
 *** Note ***
 Run cleanDemoStuff.py to tear everything down =======
+```
 </details>
 
 
