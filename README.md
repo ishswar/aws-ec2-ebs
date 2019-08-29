@@ -17,11 +17,10 @@
 12) Once all done we will teardown the all the instance and volumes 
 
 Below video shows steps 1 to 10
-[![](http://img.youtube.com/vi/qSnlbtMrUKk/0.jpg)](http://www.youtube.com/watch?v=qSnlbtMrUKk "")
 
-Below video shows steps 12 about (teardown)
+![](http://img.youtube.com/vi/qSnlbtMrUKk/0.jpg)](http://www.youtube.com/watch?v=qSnlbtMrUKk "")
 
- 
+Below video shows steps 12 about (teardown) 
 
 # Part 1 
 
