@@ -1,5 +1,21 @@
 # aws-ec2-ebs
+# Part 2 
 
+  In this Boto3 example we will do this 
+  
+  1) Creating EC2 instance using Boto3 (in use-west-2 )
+2) We will also create 3 volumes using Boto3 
+3) We will attach volumes to EC2 instance that we created in step 1 
+4) We will login via SSH (we will upload .sh file and do this) and mount these 3 volumes - write some test files 
+5) Shutdown EC2 instance 
+6) Create a snapshot of these 3 instances 
+7) Deleting these 3 volumes as well 
+8) Creating new EC2 instances 
+9) Creating volumes from snapshots from step 6 
+10) Again attaching the volumes and via SSH mounting them again back to this new EC2 instance 
+11) We will see that files that we created in step 4 are still there
+
+[![Demo video](https://i9.ytimg.com/vi/qSnlbtMrUKk/mq1.jpg?sqp=CPCxoesF&rs=AOn4CLAbaC_b8-OtCGDXkGHyvmqnFZjvRQ)](https://youtu.be/qSnlbtMrUKk)
 # Part 1 
 
 ## Introduction 

@@ -1,7 +1,7 @@
 # *************************
 # Step 01: Load this into Python first
 # *************************
-
+from datetime import datetime
 import os
 import time
 import sys
@@ -57,7 +57,7 @@ def launch_instance(amiid='ami-0f2176987ee50226e',
             secgrpid = secgrptouse['GroupId']
             bcreatedsecgrp = True
     except ClientError as e:
-        print("%s " % e.response['Error']['Code'])
+        printlog("%s " % e.response['Error']['Code'])
         raise
 
     if (bcreatedsecgrp == True):
@@ -74,7 +74,7 @@ def launch_instance(amiid='ami-0f2176987ee50226e',
                     IpProtocol='tcp',
                     ToPort=port)
             except:
-                print("error opening port:" + str(port))
+                printlog("error opening port:" + str(port))
                 exit()
 
     try:
@@ -89,38 +89,74 @@ def launch_instance(amiid='ami-0f2176987ee50226e',
             MaxCount=numinstances,
             MinCount=numinstances)
     except:
-        print("exception:", sys.exc_info()[0])
+        printlog("exception:", sys.exc_info()[0])
         raise
 
-    # The instance has been launched but it's not yet up and
-    # running.  Let's wait for it's state to change to 'running'.
-
-    print('waiting for instance')
     inst = resp["Instances"][0]
     instid = inst["InstanceId"]
-    print('Waiting for instance to enter running state')
+
+
+    printlog(
+        'EC2 instance has been created with ID : ' + instid + '\n  Now ... Waiting for instance to enter running state')
 
     bIsRunning = False
+    bDidWePrintRunning = False
     while bIsRunning == False:
         rz = ec2.describe_instance_status(InstanceIds=[instid])
+
         # call can return before all data is available
         if not bool(rz):
-            # sys.stdout.write('.')
             continue
         if len(rz["InstanceStatuses"]) == 0:
-            # sys.stdout.write('.')
             continue
 
         inststate = rz["InstanceStatuses"][0]["InstanceState"]
-        print(json.dumps(inststate, indent=2, separators=(',', ':')))
         state = inststate["Name"]
-        if state == 'running':
-            bIsRunning = True
-        # else:
-        # sys.stdout.write('.')
-        #
 
-    print('EC2 instance is running')
+        if state == 'running':
+            if not bDidWePrintRunning:
+                # printlog(json.dumps(inststate, indent=2, separators=(',', ':')))
+                printlog("Instance is running now waiting for it to initialized")
+                bDidWePrintRunning = True
+
+        instatus = rz["InstanceStatuses"][0]["InstanceStatus"]["Status"]
+        printlog("Instance status : " + instatus)
+
+        if instatus == 'ok':
+            bIsRunning = True
+        else:
+            time.sleep(45)  # Wait for 20 seconds before next poll
+            continue
+
+    printlog('Checking if instance has Public IP - else we will wait for it be assigned')
+    bGotIp = False
+    while bGotIp == False:
+        outp = ec2.describe_instances(InstanceIds=[instid])
+        inst = outp["Reservations"][0]["Instances"][0]
+        instid = inst["InstanceId"]
+        publicip = inst.get('PublicIpAddress')
+        if not publicip:
+            printlog('do not have ip address yet')
+            time.sleep(20)
+            continue
+        else:
+            bGotIp = True
+
+    printlog('Public IP assigned to this instance is: ' + publicip)
+    # The instance has been launched but it's not yet up and
+    # running.  Let's wait for it's state to change to 'running'.
+
     return inst
 
+
 # inst = launch_instance()
+
+def banner(text, ch='=', length=78):
+    spaced_text = ' %s ' % text
+    banner = spaced_text.center(length, ch)
+    return banner
+
+
+def printlog(text):
+    strformat = "%Y-%m-%d %H:%M:%S"
+    print(datetime.strftime(datetime.now(), strformat), text)
