@@ -15,7 +15,8 @@
 10) Again attaching the volumes and via SSH mounting them again back to this new EC2 instance 
 11) We will see that files that we created in step 4 are still there
 
-[![Demo video](https://i9.ytimg.com/vi/qSnlbtMrUKk/mq1.jpg?sqp=CPCxoesF&rs=AOn4CLAbaC_b8-OtCGDXkGHyvmqnFZjvRQ)](https://youtu.be/qSnlbtMrUKk)
+[![](http://img.youtube.com/vi/qSnlbtMrUKk/0.jpg)](http://www.youtube.com/watch?v=qSnlbtMrUKk "")
+
 # Part 1 
 
 ## Introduction 
