@@ -18,7 +18,7 @@
 
 Below video shows steps 1 to 10
 
-![](http://img.youtube.com/vi/qSnlbtMrUKk/0.jpg)](http://www.youtube.com/watch?v=qSnlbtMrUKk "")
+[![](http://img.youtube.com/vi/qSnlbtMrUKk/0.jpg)](http://www.youtube.com/watch?v=qSnlbtMrUKk "EC2 EBS Volume demo ")
 
 Below video shows steps 12 about (teardown) 
 
