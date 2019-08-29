@@ -22,6 +22,15 @@ Below video shows steps 1 to 10
 
 Below video shows steps 12 about (teardown) 
 
+## Code output
+
+<details>
+  <summary>Click to expand</summary>
+  This ia test
+</details>
+
+
+
 # Part 1 
 
 ## Introduction 
