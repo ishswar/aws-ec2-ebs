@@ -14,8 +14,14 @@
 9) Creating volumes from snapshots from step 6 
 10) Again attaching the volumes and via SSH mounting them again back to this new EC2 instance 
 11) We will see that files that we created in step 4 are still there
+12) Once all done we will teardown the all the instance and volumes 
 
+Below video shows steps 1 to 10
 [![](http://img.youtube.com/vi/qSnlbtMrUKk/0.jpg)](http://www.youtube.com/watch?v=qSnlbtMrUKk "")
+
+Below video shows steps 12 about (teardown)
+
+ 
 
 # Part 1 
 
