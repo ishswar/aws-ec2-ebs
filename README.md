@@ -19,7 +19,7 @@
   
   Now, let's go in more details about each part         
 
-# Part 2 [[ EC2 with 3 Volumes ]]
+# Part 2 [ EC2 with 3 Volumes ]
 
   In this Boto3 example we will do this 
   
@@ -424,7 +424,7 @@ Run cleanDemoStuff.py to tear everything down =======
 
 ![AWS Console](https://github.com/ishswar/aws-ec2-ebs/blob/master/ec2_ebs_part_2/images/AWS_Console_showing_final_instance.jpg?raw=true)
 
-# Part 1 [[ EC2 instance with 1 volume ]]
+# Part 1 [ EC2 instance with 1 volume ]
 
 ## Introduction 
 
