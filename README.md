@@ -16,6 +16,10 @@
 11) We will see that files that we created in step 4 are still there
 12) Once all done we will teardown the all the instance and volumes 
 
+## Scenario (flowchart)
+
+![Demo flow](https://github.com/ishswar/aws-ec2-ebs/blob/master/ec2_ebs_part_2/images/AWS-EC2_EBS_Volumes_Snapshot_demo-flowchart.png?raw=true)
+
 Below video shows steps 1 to 10
 
 [![](http://img.youtube.com/vi/qSnlbtMrUKk/0.jpg)](http://www.youtube.com/watch?v=qSnlbtMrUKk "EC2 EBS Volume demo ")
