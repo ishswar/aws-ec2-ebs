@@ -22,6 +22,7 @@ Below video shows steps 1 to 10
 
 Below video shows steps 12 about (teardown) 
 
+![Cleanup](https://github.com/ishswar/aws-ec2-ebs/blob/master/ec2_ebs_part_2/images/aws_ec2_ebs_cleanup.gif?raw=true)
 
 ## Python files
 
