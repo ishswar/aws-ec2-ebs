@@ -46,7 +46,6 @@ During program execution it uses temporory files to store EC2 instances , volume
 
 <details>
   <summary>Click to see full output</summary>
-#### yes, even hidden code blocks!
 
 ```bash
 ➜  ec2_ebs_part_2 git:(master) ✗ ./runDEMO.py
