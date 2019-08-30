@@ -20,6 +20,10 @@ Below video shows steps 1 to 10
 
 [![](http://img.youtube.com/vi/qSnlbtMrUKk/0.jpg)](http://www.youtube.com/watch?v=qSnlbtMrUKk "EC2 EBS Volume demo ")
 
+#### Demo with just commands : 
+
+[![asciicast](https://asciinema.org/a/XAyl80rTExVLYjlZ2f3BJjSH3.svg)](https://asciinema.org/a/XAyl80rTExVLYjlZ2f3BJjSH3)
+
 Below video shows steps 12 about (teardown) 
 
 ![Cleanup](https://github.com/ishswar/aws-ec2-ebs/blob/master/ec2_ebs_part_2/images/aws_ec2_ebs_cleanup.gif?raw=true)
