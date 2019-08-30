@@ -26,18 +26,18 @@ Below video shows steps 12 about (teardown)
 
 ## Python files
 
-cleanDemoStuff.py :   
+#### cleanDemoStuff.py :   
 
 This file will be used to teardown, first it will delete EC2 instance then it will  
                     delete volumes and in last all the snapshots that we created during this demo . All the   
                     instance/volume/snapshot ID it gets it from temp files that we use to store this information  
 
-createStart_EC2Inst.py :  
+#### createStart_EC2Inst.py :  
 
 This is a helper class; it is used to create EC2 instances and wait for them to come up .  
 It also has some helper functions    
 
-runDEMO.py :  
+#### runDEMO.py :  
 
 This is a main file - it does all the steps described above (1 to 11)  
 During program execution it uses temporory files to store EC2 instances , volume and snapshot id  
