@@ -1,5 +1,25 @@
 # aws-ec2-ebs
-# Part 2 
+
+# Introduction 
+
+  In this repo we have code about how to create/manage AWS resources using Boto2 python client library  
+  We are focusing on mainly EC2 and EBS volumes . How we can attach additional EBS volumes once EC2 has be created  
+  how we can create a snapshot fo EBS volumes and then create a new volume out of it    
+  
+  There are two part to this repo 
+  
+## Pat 1:   
+  Part 1 has Boto2 python code in that we create one EC2 instance , 1 additional 2 GB EBS volume and show  
+  how we can attach that volume to EC2 linux machine - then write some file . latter create a snapshot of that volume  
+  and then from we create a new EBS Volume and mount to new ec2 instance and we can see that file writen before is still there on volume 
+  
+## Part 2: 
+  In Part 2 we extend above code to be more robust and extend capability to attach 3 volumes , we also automate mounting those  
+  volumes in EC2 linux (via SSH)  
+  
+  Now, let's go in more details about each part         
+
+# Part 2 [[ EC2 with 3 Volumes ]]
 
   In this Boto3 example we will do this 
   
@@ -404,7 +424,7 @@ Run cleanDemoStuff.py to tear everything down =======
 
 ![AWS Console](https://github.com/ishswar/aws-ec2-ebs/blob/master/ec2_ebs_part_2/images/AWS_Console_showing_final_instance.jpg?raw=true)
 
-# Part 1 
+# Part 1 [[ EC2 instance with 1 volume ]]
 
 ## Introduction 
 
