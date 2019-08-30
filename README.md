@@ -396,7 +396,9 @@ Run cleanDemoStuff.py to tear everything down =======
 ```
 </details>
 
+### Screen capture 
 
+![AWS Console](https://github.com/ishswar/aws-ec2-ebs/blob/master/ec2_ebs_part_2/images/AWS_Console_showing_final_instance.jpg?raw=true)
 
 # Part 1 
 
