@@ -8,12 +8,12 @@
   
   There are two part to this repo 
   
-## Pat 1:   
+## [Pat 1](#part-1--ec2-instance-with-1-volume-):   
   Part 1 has Boto2 python code in that we create one EC2 instance , 1 additional 2 GB EBS volume and show  
   how we can attach that volume to EC2 linux machine - then write some file . latter create a snapshot of that volume  
   and then from we create a new EBS Volume and mount to new ec2 instance and we can see that file writen before is still there on volume 
   
-## Part 2: 
+## [Part 2](##part-2--ec2-with-3-volumes-): 
   In Part 2 we extend above code to be more robust and extend capability to attach 3 volumes , we also automate mounting those  
   volumes in EC2 linux (via SSH)  
   
