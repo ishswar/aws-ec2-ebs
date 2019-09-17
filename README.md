@@ -2,7 +2,7 @@
 
 # Introduction 
 
-  In this repo we have code about how to create/manage AWS resources using Boto2 python client library  
+  In this repo we have code about how to create/manage AWS resources using Boto3 python client library  
   We are focusing on mainly EC2 and EBS volumes . How we can attach additional EBS volumes once EC2 has be created  
   how we can create a snapshot fo EBS volumes and then create a new volume out of it    
   
